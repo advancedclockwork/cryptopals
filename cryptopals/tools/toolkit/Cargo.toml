@@ -1,0 +1,10 @@
+[package]
+name = "toolkit"
+version = "0.1.0"
+authors = ["owen"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+hex = "0.3.2"
+rayon = "1.0.3"

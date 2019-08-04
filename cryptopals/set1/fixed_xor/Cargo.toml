@@ -1,0 +1,8 @@
+[package]
+name = "fixed_xor"
+version = "0.1.0"
+authors = ["owen"]
+edition = "2018"
+
+[dependencies]
+toolkit = {path = "../../tools/toolkit"}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ConvertHexToBase64.iml" filepath="$PROJECT_DIR$/.idea/ConvertHexToBase64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/convert_hex_to_base64.iml" filepath="$PROJECT_DIR$/.idea/convert_hex_to_base64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fixed_xor/.idea/fixed_xor.iml" filepath="$PROJECT_DIR$/../fixed_xor/.idea/fixed_xor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../single_byte_xor/.idea/single_byte_xor.iml" filepath="$PROJECT_DIR$/../single_byte_xor/.idea/single_byte_xor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tools/toolkit/.idea/toolkit.iml" filepath="$PROJECT_DIR$/../../tools/toolkit/.idea/toolkit.iml" />
+    </modules>
+  </component>
+</project>
