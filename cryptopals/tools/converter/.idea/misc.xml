@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="BqqZvYky" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (converter)" project-jdk-type="Python SDK" />
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+</project>
