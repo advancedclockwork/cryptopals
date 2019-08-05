@@ -31,7 +31,7 @@ pub mod file_reader {
         #[test]
         fn it_works() {
             assert_eq!(&"asdf".to_string(), get_values(
-                "/home/owen/github projects/cryptopals/cryptopals/tools/file_reader/test/test")
+                "./test/test")
                 .get(1).unwrap());
         }
     }
