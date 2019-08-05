@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cryptopals.iml" filepath="$PROJECT_DIR$/.idea/cryptopals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cryptopals/set1/detect_single_byte_XOR/.idea/detect_single_byte_XOR.iml" filepath="$PROJECT_DIR$/cryptopals/set1/detect_single_byte_XOR/.idea/detect_single_byte_XOR.iml" />
+    </modules>
+  </component>
+</project>
