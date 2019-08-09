@@ -6,7 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/file_reader/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/file_reader/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/file_reader/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/pattern_matcher/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/pattern_matcher/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/pattern_matcher/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/cryptopals/tools/pattern_matcher/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/cryptopals/tools/file_reader/target" />
+      <excludeFolder url="file://$MODULE_DIR$/cryptopals/tools/pattern_matcher/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
