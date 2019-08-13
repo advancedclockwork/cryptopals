@@ -1,13 +1,14 @@
 mod pattern_matcher {
     use std::collections::HashMap;
-    //struct PatternMatcher{
-    //}
+    struct PatternMatcher{
 
-    //impl PatternMatcher{
-        //pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {
-        //    let most_common_char_order: Vec<i8> = find_most_common_char(encrypted_string);
-        //}
-    //}
+    }
+
+    impl PatternMatcher{
+        pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {
+            let most_common_char_order: Vec<i8> = find_most_common_char(encrypted_string);
+        }
+    }
 
 
         fn find_most_common_char_order(string_to_check: &str) -> Vec<(char, i32)>{
