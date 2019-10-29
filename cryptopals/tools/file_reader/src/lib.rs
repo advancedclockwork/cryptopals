@@ -9,18 +9,18 @@ pub mod file_reader {
 
     #[derive(Deserialize)]
     pub struct Paths {
-        directory                       : String,
-        mieliestrok_work_list           : String,
-        most_common_digraphs            : String,
-        most_common_doubles             : String,
-        most_common_four_letter_words   : String,
-        most_common_initial_letter      : String,
-        most_common_last_letter         : String,
-        most_common_letters             : String,
-        most_common_one_letter_words    : String,
-        most_common_three_letter_words  : String,
-        most_common_trigraphs           : String,
-        most_common_two_letter_words    : String,
+        pub directory                       : String,
+        pub mieliestrok_work_list           : String,
+        pub most_common_digraphs            : String,
+        pub most_common_doubles             : String,
+        pub most_common_four_letter_words   : String,
+        pub most_common_initial_letter      : String,
+        pub most_common_last_letter         : String,
+        pub most_common_letters             : String,
+        pub most_common_one_letter_words    : String,
+        pub most_common_three_letter_words  : String,
+        pub most_common_trigraphs           : String,
+        pub most_common_two_letter_words    : String,
     }
 
     pub fn get_path_values(file_path: &str) -> Paths {

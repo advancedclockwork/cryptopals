@@ -1,13 +1,17 @@
 mod pattern_matcher {
     use std::collections::HashMap;
     struct PatternMatcher{
-
+        common_chars: Vec<(char, i32)>,
+        full_dictionary_tri: Trie::new(),
     }
 
     impl PatternMatcher{
-        pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {
-            let most_common_char_order: Vec<i8> = find_most_common_char(encrypted_string);
+        fn new() -> PatternMatcher{
+            find_most_common_char_order(string_to_check);
         }
+        //pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {
+        //    let most_common_char_order: Vec<i8> = find_most_common_char(encrypted_string);
+        //}
     }
 
 
@@ -24,7 +28,7 @@ mod pattern_matcher {
             character_frequency.sort_by(|a, b| b.1.cmp(&a.1));
             character_frequency
         }
-
+    
 
     #[cfg(test)]
     mod tests {

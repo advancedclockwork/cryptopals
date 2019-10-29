@@ -1,0 +1,1 @@
+{"rustc":10683586082858123265,"features":"[]","target":15224387647513632514,"profile":9935990280773120926,"path":4171501321821581234,"deps":[[16754548897914171722,"nibble_vec",false,3676065739488853644]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/radix_trie-870d354330d5663a/dep-lib-radix_trie-870d354330d5663a"}}],"rustflags":[],"metadata":11929465390032032206}
