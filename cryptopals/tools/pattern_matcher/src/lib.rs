@@ -9,7 +9,7 @@ mod pattern_matcher {
 
     impl PatternMatcher{
         fn new() -> PatternMatcher{
-            let common_chars = find_most_common_char_order(string_to_check);
+            let common_chars = file_reader::get_most_common_characters();
             let all_words = dictionary_trie::DictionaryTrie::new();
         }
         //pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {

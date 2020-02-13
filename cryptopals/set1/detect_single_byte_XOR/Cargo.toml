@@ -7,3 +7,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dictionary_trie = {path = "../../tools/dictionary_trie"}
+file_reader = {path = "../../tools/file_reader"}
+pattern_matcher = {path = "../../tools/pattern_matcher"}
