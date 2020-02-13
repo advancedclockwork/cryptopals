@@ -1,21 +1,26 @@
 mod pattern_matcher {
     use std::collections::HashMap;
+    use dictionary_trie;
+    use file_reader;
     struct PatternMatcher{
         common_chars: Vec<(char, i32)>,
-        full_dictionary_tri: Trie::new(),
+        all_words: DictionaryTrie,
     }
 
     impl PatternMatcher{
         fn new() -> PatternMatcher{
-            find_most_common_char_order(string_to_check);
+            let common_chars = find_most_common_char_order(string_to_check);
+            let all_words = dictionary_trie::DictionaryTrie::new();
         }
         //pub fn simple_pattern_match(encrypted_string: &str, key: &str) -> String {
         //    let most_common_char_order: Vec<i8> = find_most_common_char(encrypted_string);
         //}
-    }
+        pub fn find_most_likely_decryption(&self, string_to_decrypt: String){
+
+        }
 
 
-        fn find_most_common_char_order(string_to_check: &str) -> Vec<(char, i32)>{
+        fn find_most_common_char_order(&self, string_to_check: &str) -> Vec<(char, i32)>{
             let mut character_frequency_store: HashMap<char,i32> = HashMap::new();
             for character in string_to_check.chars(){
                 let entry = character_frequency_store.entry(character).or_insert(0);
@@ -28,6 +33,7 @@ mod pattern_matcher {
             character_frequency.sort_by(|a, b| b.1.cmp(&a.1));
             character_frequency
         }
+    }
     
 
     #[cfg(test)]

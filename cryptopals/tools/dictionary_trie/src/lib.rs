@@ -7,7 +7,7 @@ struct DictionaryTrie {
 
 impl DictionaryTrie{
     pub fn new() -> DictionaryTrie{
-        let word_list: Vec<String> = get_file_contents("../toolkit/resources/MieliestrokWordList");
+        let word_list: Vec<String> = get_mieliestrok_word_list();
         let mut viable_words: Trie<String, bool> = Trie::new();
         for word in word_list{
             viable_words.insert(word, true);
