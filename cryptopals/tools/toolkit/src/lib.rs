@@ -34,9 +34,14 @@ pub mod xor{
         }
         hex::encode(to_return).to_string()
     }
-    pub fn single_byte_xor(key: char, to_decrypt: String)->Vec<String>(
-        to_decrypt
-    )
+    pub fn single_byte_xor(key: char, to_decrypt: String)->String{
+        let mut to_return: Vec<u8> = vec!();
+        for current_index in hex::decode(to_decrypt).unwrap(){
+            to_return.push(current_index ^ hex::decode(key.to_string()).unwrap()[0]);
+        }
+        hex::encode(to_return).to_string()
+    }
+
     #[cfg(test)]
     mod tests {
         use crate::xor::fixed_xor;

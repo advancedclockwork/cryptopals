@@ -1,7 +1,7 @@
 use radix_trie::Trie;
 use file_reader::file_reader::*;
 
-struct DictionaryTrie {
+pub struct DictionaryTrie {
     viable_words: Trie<String, bool>,
 }
 

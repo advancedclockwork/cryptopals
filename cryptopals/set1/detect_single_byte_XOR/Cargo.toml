@@ -10,3 +10,4 @@ edition = "2018"
 dictionary_trie = {path = "../../tools/dictionary_trie"}
 file_reader = {path = "../../tools/file_reader"}
 pattern_matcher = {path = "../../tools/pattern_matcher"}
+toolkit = {path = "../../tools/toolkit"}
