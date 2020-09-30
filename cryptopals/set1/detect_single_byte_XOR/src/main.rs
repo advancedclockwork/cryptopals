@@ -35,10 +35,10 @@ fn main() {
     for encrypted_string in encrypted_strings{
         let mut score = 0;
         let most_common_letters_in_encrypted_string = pattern_matcher.find_most_common_char_order(&encrypted_string);
-        for entry: char in common_letters{//common letters is the issue
-            let key = entry ^ most_common_letters_in_encrypted_string[0].0;
+        for entry in common_letters{//common letters is the issue
+            let key = entry.chars().next().unwrap() ^ most_common_letters_in_encrypted_string[0].0;
             let decrypted_string = toolkit::xor::single_byte_xor(key,encrypted_string.to_string());
-            for word in decrypted_string.split(" "){
+            for word in decrypted_string.split_whitespace(){
                 if all_words.check_word(word.to_string()){
                     score += 1;
                 }

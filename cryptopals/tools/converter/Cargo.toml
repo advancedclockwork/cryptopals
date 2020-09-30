@@ -1,0 +1,11 @@
+[package]
+name = "converter"
+version = "0.1.0"
+authors = ["owen M <advancedclockwork@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.10.1"
+hex = "0.3.2"

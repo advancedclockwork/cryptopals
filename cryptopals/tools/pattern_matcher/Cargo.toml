@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 dictionary_trie = {path = "../../tools/dictionary_trie"}
 file_reader = {path = "../../tools/file_reader"}
+converter = {path = "../../tools/converter"}

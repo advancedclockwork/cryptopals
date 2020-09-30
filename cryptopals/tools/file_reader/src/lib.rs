@@ -2,7 +2,6 @@ pub mod file_reader {
     use std::fs::File;
     use std::path::Path;
     use std::path::Display;
-    use std::error::Error;
     use std::io::{BufReader, Read};
     use toml;
     use serde_derive::Deserialize;
@@ -49,7 +48,7 @@ pub mod file_reader {
 
         match toml::from_str(&config_toml) {
             Ok(t) => t,
-            Err(why) => panic!("values for {} could not be parsed: {}", PATH_FILE, why.description())
+            Err(why) => panic!("values for {} could not be parsed: {}", PATH_FILE, why.to_string())
         }
     }
 
@@ -109,7 +108,7 @@ pub mod file_reader {
     }
 
     pub fn get_file_contents(file_path: &str) -> Vec<String>{
-        get_values(&file_path).split("\n").map(|s| s.to_string()).collect::<Vec<String>>()
+        get_values(&file_path).split_whitespace().map(|s| s.to_string()).collect::<Vec<String>>()
     }
 
     fn get_values(file_path: &str) -> String{
@@ -120,14 +119,14 @@ pub mod file_reader {
             // The `description` method of `io::Error` returns a string that
             // describes the error
             Err(why) => panic!("couldn't open {}: {}", display,
-                               why.description()),
+                               why.to_string()),
             Ok(file) => file,
         };
         let mut reader = BufReader::new(file);
         let mut file_contents = String::new();
         match reader.read_to_string(&mut file_contents){
             Err(why) => panic!("file {} could not be read correctly: {}", file_path,
-                               why.description()),
+                               why.to_string()),
             _ => (),
         };
         file_contents

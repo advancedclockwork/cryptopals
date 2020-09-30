@@ -5,3 +5,5 @@ authors = ["owen"]
 edition = "2018"
 
 [dependencies]
+converter = {path = "../../tools/converter"}
+pattern_matcher = {path = "../../tools/pattern_matcher"}
